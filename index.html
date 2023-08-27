@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/375cfc3d13.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./images/bookmark.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookmarker</title>
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="display-3">Bookmarker</h1>
+      <hr class="my-4" />
+    </header>
+    <main class="container text-center">
+      <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+      <form class="text-start">
+        <div class="mb-4">
+          <label for="name" class="form-label fw-bold"><i class="me-2 fa-solid fa-book-bookmark"></i> Site Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Bookmark name"
+            aria-describedby="Site name"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="url" class="form-label fw-bold"><i class="me-2 fa-solid fa-link"></i> Site URL</label>
+          <input
+            type="text"
+            name="url"
+            id="url"
+            class="form-control"
+            placeholder="Website URL"
+            aria-describedby="Site URL"
+          />
+        </div>
+        <button class="btn mx-auto d-block">Submit</button>
+        <hr class="my-4" />
+      </form>
+      <div class="table-responsive">
+        <table class="table bg-secondary">
+          <thead class="fw-semibold">
+            <td>Index</td>
+            <td>Website name</td>
+            <td>Visit</td>
+            <td>Delete</td>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
